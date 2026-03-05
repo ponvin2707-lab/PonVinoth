@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: #f7f9fc;
+}
+
+h2 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #555;
+  margin-top: 0;
+}
+
+.controls {
+  margin: 16px 0;
+}
+
+#map {
+  height: 500px;
+  width: min(1000px, 92%);
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.status {
+  margin-top: 14px;
+  color: #333;
+}
