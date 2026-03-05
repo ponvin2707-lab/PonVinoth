@@ -1,0 +1,25 @@
+CREATE DATABASE bus_tracking;
+
+USE bus_tracking;
+
+CREATE TABLE users(
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(100),
+ email VARCHAR(100),
+ password VARCHAR(100),
+ role VARCHAR(20)
+);
+
+CREATE TABLE buses(
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ bus_number VARCHAR(50),
+ driver_id INT
+);
+
+CREATE TABLE locations(
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ bus_id INT,
+ lat DOUBLE,
+ lng DOUBLE,
+ timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
