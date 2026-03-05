@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>College Bus Tracking</title>
-<link rel="stylesheet" href="style.css">
-
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-<script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Bus Tracking</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
 </head>
-
 <body>
+  <h2>College Bus Live Tracking</h2>
+  <p class="subtitle">Track your college bus in real-time</p>
 
-<h2>College Bus Live Tracking</h2>
+  <div class="controls">
+    <label for="busId">Bus ID:</label>
+    <input id="busId" type="number" min="1" value="1" />
+    <button id="trackBtn">Track Bus</button>
+  </div>
 
-<div id="map"></div>
+  <div id="map"></div>
+  <p id="status" class="status">Waiting for location updates…</p>
 
-<script src="student.js"></script>
-
+  <script src="student.js"></script>
 </body>
 </html>
